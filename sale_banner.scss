@@ -1,0 +1,84 @@
+/*variables*/
+$frstColor:#FFC107;
+$secondColor:#8BC34A;
+$thirdColor:#00BCD4;
+$fourthColor:#00BCD4;
+$firthColor: #6e8900;
+$primaryColor:#009688;
+
+
+
+.box{
+  display: block;
+  border: 2px solid black;
+  align:center;
+  margin: 50px auto;
+  width: 611px;
+  height: 370px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 90;
+  overflow: hidden;
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ie-Uu1QEDFmoIFKwTfNuYCOdWEIjS1LCSBGr7wHNDFji67pV);
+  background-size: cover;
+
+
+
+  .ribbon{
+    font: bold 18px Sans-Serif;
+    color: $frstColor;
+    text-shadow: 2px 2px $secondColor;
+    text-align: center;
+    transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: 477px;
+    top: 15px;
+    width: 179px;
+    background-color: $fourthColor;
+  }
+
+  .ribbon:before, .ribbon:after {
+    content: "";
+    border-top:   3px solid $firthColor;
+    border-left:  3px solid transparent;
+    border-right: 3px solid transparent;
+    position:absolute;
+    bottom: 3px;
+  }
+
+  .ribbon:before {
+    left: 0;
+  }
+  .ribbon:after {
+    right: 0;
+  }​
+  #h1{
+    font-size: 30px;
+    font-family:Arial ;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #0CF574;
+    text-decoration-style: double;
+  }
+  #p1 {
+    text-align: center;
+    font-size: 20px;
+    color:#07BEB8;
+
+
+    text-shadow: 2px 2px black;
+
+  }
+}
+@media  screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .box{
+        width: 100%;
+    }
+  }
+  @media  screen and (max-width: 600px) {
+    .box {
+        width:100%;
+    }
+}
